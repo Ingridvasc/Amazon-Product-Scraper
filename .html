@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Product Scraper | Ingrid Vasconcelos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <h1>Amazon Product Scraper</h1>
+  <div class="box">
+    <input type="text" id="keyword" placeholder="Enter search keyword">
+    <a href="#" onclick="scrapeProducts()">
+      <i class='bx bx-search'></i>
+    </a>
+  </div>
+  <div id="results"></div>
+
+  <script>
+    async function scrapeProducts() {
+      const keyword = document.getElementById('keyword').value;
+      if (!keyword) {
+        alert('Please enter a keyword');
+        return;
+      }
+
+      const response = await fetch(`/api/scrape?keyword=${encodeURIComponent(keyword)}`);
+      const products = await response.json();
+      
+      const resultsDiv = document.getElementById('results');
+      resultsDiv.innerHTML = '';
+
+      products.forEach(product => {
+        const productDiv = document.createElement('div');
+        productDiv.classList.add('product');
+
+        productDiv.innerHTML = `
+          <img src="${product.imageUrl}" alt="${product.title}">
+          <div>
+            <h2>${product.title}</h2>
+            <p>Rating: ${product.rating}</p>
+            <p>Reviews: ${product.reviews}</p>
+          </div>
+        `;
+
+        resultsDiv.appendChild(productDiv);
+      });
+    }
+  </script>
+</body>
+</html>
