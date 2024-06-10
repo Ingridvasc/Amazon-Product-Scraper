@@ -11,7 +11,11 @@ This is a simple project to scrape Amazon product search results from the first 
 
 ## Project 👇🏼
 
-<img src="Photo.jpg" alt="The Website">
+
+
+https://github.com/Ingridvasc/Amazon-Product-Scraper/assets/97748970/680d69c9-f147-4a9b-9be3-61249b9aef02
+
+
 
 ## Technologies Used
 
