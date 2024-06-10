@@ -1,9 +1,11 @@
+/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
-  }
-  
-  body {
+}
+
+/* Styling for the body */
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -11,24 +13,28 @@
     background: rgb(212, 202, 202);
     font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
-  }
-  
-  h1 {
+}
+
+/* Styling for the main header */
+h1 {
     color: #b90984e5;
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 50px;
-  }
+}
 
-  .bold {
+/* Additional class for bold text */
+.bold {
     font-weight: bold;
-  }
+}
 
-  .uppercase {
+/* Additional class for uppercase text */
+.uppercase {
     text-transform: uppercase;
-  }
+}
 
-  .box {
+/* Styling for the search box */
+.box {
     height: 50px;
     display: flex;
     cursor: pointer;
@@ -37,35 +43,40 @@
     border-radius: 30px;
     align-items: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  }
-  
-  .box:hover input {
+}
+
+/* Expand input field on hover */
+.box:hover input {
     width: 400px;
-  }
-  
-  .box input {
+}
+
+/* Styling for the input field */
+.box input {
     width: 0;
     outline: none;
     border: none;
     font-weight: 500;
     transition: 0.8s;
     background: transparent;
-  }
-  
-  .box a {
+}
+
+/* Styling for the search icon */
+.box a {
     color: rgb(255, 20, 59);
     font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  #results {
+}
+
+/* Styling for the search results container */
+#results {
     margin-top: 20px;
     width: 80%;
-  }
-  
-  .product {
+}
+
+/* Styling for each product item */
+.product {
     border: 1px solid #000000;
     background-color: rgb(0, 0, 0);
     border-radius: 4px;
@@ -73,21 +84,23 @@
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-  }
-  
-  .product img {
+}
+
+/* Styling for product images */
+.product img {
     max-width: 100px;
     margin-right: 20px;
-  }
-  
-  .product h2 {
+}
+
+/* Styling for product titles */
+.product h2 {
     font-size: 18px;
     color: #000000;
     margin: 0 0 10px 0;
-  }
-  
-  .product p {
+}
+
+/* Styling for product details */
+.product p {
     margin: 5px 0;
     color: #000000;
-  }
-  
+}
