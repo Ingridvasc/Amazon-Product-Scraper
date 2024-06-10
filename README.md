@@ -2,10 +2,16 @@
 
 This is a simple project to scrape Amazon product search results from the first page for a given keyword.
 
-## Features
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Ingridvasc/Portifolio/blob/main/LICENSE) 
+
+## Features 
 
 - Scrapes Amazon search results for a provided keyword.
 - Displays product details including title, rating, number of reviews, and image URL.
+
+## Project 👇🏼
+
+<img src="Photo.jpg" alt="The Website">
 
 ## Technologies Used
 
