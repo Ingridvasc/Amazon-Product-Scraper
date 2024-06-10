@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
   <title>Amazon Product Scraper | Ingrid Vasconcelos</title>
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
+  <!-- Boxicons CSS -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+  <!-- Page Title -->
   <h1>Amazon Product Scraper</h1>
+  <!-- Search Box -->
   <div class="box">
     <input type="text" id="keyword" placeholder="Enter search keyword">
     <a href="#" onclick="scrapeProducts()">
-      <i class='bx bx-search'></i>
+      <i class='bx bx-search'></i> <!-- Search icon -->
     </a>
   </div>
+  <!-- Results container -->
   <div id="results"></div>
 
+  <!-- JavaScript -->
   <script>
     async function scrapeProducts() {
+      // Get the search keyword
       const keyword = document.getElementById('keyword').value;
       if (!keyword) {
         alert('Please enter a keyword');
         return;
       }
 
+      // Fetch product data from the API
       const response = await fetch(`/api/scrape?keyword=${encodeURIComponent(keyword)}`);
       const products = await response.json();
       
+      // Display product results
       const resultsDiv = document.getElementById('results');
       resultsDiv.innerHTML = '';
 
       products.forEach(product => {
+        // Create a div for each product
         const productDiv = document.createElement('div');
         productDiv.classList.add('product');
 
+        // Populate product details
         productDiv.innerHTML = `
           <img src="${product.imageUrl}" alt="${product.title}">
           <div>
-            <h2>${product.title}</h2>
-            <p>Rating: ${product.rating}</p>
-            <p>Reviews: ${product.reviews}</p>
+            <h2>${product.title}</h2> <!-- Product title -->
+            <p>Rating: ${product.rating}</p> <!-- Product rating -->
+            <p>Reviews: ${product.reviews}</p> <!-- Number of reviews -->
           </div>
         `;
 
+        // Append product div to the results container
         resultsDiv.appendChild(productDiv);
       });
     }
