@@ -16,7 +16,7 @@ Ingrid Vasconcelos
 ## Project 👇🏼
 
 
-https://github.com/Ingridvasc/Amazon-Product-Scraper/assets/97748970/680d69c9-f147-4a9b-9be3-61249b9aef02
+https://github.com/Ingridvasc/Amazon-Product-Scraper/assets/97748970/ff966c95-3b5e-42ed-ada0-88da1786b7d7
 
 
 ## Technologies Used
