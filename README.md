@@ -12,9 +12,7 @@ This is a simple project to scrape Amazon product search results from the first 
 ## Project 👇🏼
 
 
-
 https://github.com/Ingridvasc/Amazon-Product-Scraper/assets/97748970/680d69c9-f147-4a9b-9be3-61249b9aef02
-
 
 
 ## Technologies Used
@@ -33,3 +31,7 @@ https://github.com/Ingridvasc/Amazon-Product-Scraper/assets/97748970/680d69c9-f1
 
 ```bash
 git clone https://github.com/your-username/repository-name.git
+
+## Autor ✏️
+
+Ingrid Vasconcelos
