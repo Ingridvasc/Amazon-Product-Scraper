@@ -9,6 +9,10 @@ This is a simple project to scrape Amazon product search results from the first 
 - Scrapes Amazon search results for a provided keyword.
 - Displays product details including title, rating, number of reviews, and image URL.
 
+## Autor ✏️
+
+Ingrid Vasconcelos
+
 ## Project 👇🏼
 
 
@@ -31,7 +35,3 @@ https://github.com/Ingridvasc/Amazon-Product-Scraper/assets/97748970/680d69c9-f1
 
 ```bash
 git clone https://github.com/your-username/repository-name.git
-
-## Autor ✏️
-
-Ingrid Vasconcelos
